@@ -5,7 +5,6 @@ import ToDoList from "./TodoList";
 import Header from "./Header";
 import TodoInput from "./TodoInput";
 import { v4 as uuid } from 'uuid';
-import NoMatch from "./NoMatch"
 import About from "./pages/About";
 
 
@@ -54,14 +53,13 @@ const TodoContainer = () => {
         setTodoArrState(newArr === null ? [] : newArr)
     }, [])
 
-    // ? limit= num  gib mir limit möglichkeit
    
 
     // es wird erstmal das ausgeführt
     useEffect(() => {
         console.log("es wird getestet")
         localStorage.setItem('simpleTodoList:', JSON.stringify(todoArrstate));
-    }, [todoArrstate]);
+        }, [todoArrstate]);
 
     return (
         <main className="App" style={{ margin: "0" }}>
@@ -83,7 +81,7 @@ const TodoContainer = () => {
 
                 />} />
                 <Route path="/About" element={<About />}/>
-                <Route path="*" element={<NoMatch/>}/>
+           
 
             </Routes>
 
