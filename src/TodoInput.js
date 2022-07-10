@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Alert from "react-bootstrap/Alert"
 import styles from "./Alertstyle.module.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
+
 
 const TodoInput = (props) => {
 
@@ -41,16 +40,6 @@ const TodoInput = (props) => {
                         onChange={onChangeHandler} class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"></input>
                 </div>
                 {inputText.length === 0 ? <Alert className={styles.sec} variant="warning text-center">Add Your Task </Alert> : null}
-                {/* <div className="inp-btn">
-                    <input
-                        type="text"
-                        name=""
-                        id="getId"
-                        value={inputText}
-                        onChange={onChangeHandler}
-                    />
-                    <button id="todoBtn"><FontAwesomeIcon icon={faPlus} /></button>
-                </div> */}
 
             </form>
 

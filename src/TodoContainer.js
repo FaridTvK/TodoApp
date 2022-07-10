@@ -3,53 +3,14 @@ import { Route, Routes } from "react-router-dom"
 import "./TodoContainer.scss"
 import ToDoList from "./TodoList";
 import Header from "./Header";
-import TodoCount from "./TodoCount";
-// import Playground from "./Playground";
 import TodoInput from "./TodoInput";
-// import Alert from "./Alert"
 import { v4 as uuid } from 'uuid';
 import NoMatch from "./NoMatch"
-import Contact from "./pages/Contact"
 import About from "./pages/About";
-import Privacy from "./pages/Privacy"
-
-
-
-// let _todos = [
-//     {
-//         id: uuid(),
-//         title: "essen",
-//         completed: true,
-//     },
-//     {
-//         id: uuid(),
-//         title: "aufräumen",
-//         completed: false
-//     },
-//     {
-//         id: uuid(),
-//         title: "zocken",
-//         completed: false
-//     },
-//     {
-//         id: uuid(),
-//         title: "schlafen",
-//         completed: true,
-//     }
-// ];
-// um mehr compenenten innerhalb einer return schreiben zu können , kann man mit REACT.Fragment machen!
-
-
 
 
 
 const TodoContainer = () => {
-    // die useState fucntion gibt uns ein Array zurrück
-    // mit der "state Variable" (todosArrState) und einer function 
-    // mit der wir die "state Variable" ändern können!
-    /*  const [showPlayground, setShowPlayground] = useState(false)
-  */
-     // const [Load, isLoading] = useState(true)
 
 
 
@@ -94,24 +55,7 @@ const TodoContainer = () => {
     }, [])
 
     // ? limit= num  gib mir limit möglichkeit
-    // useEffect(() => {
-
-    //     const fetchData = async () => {
-
-    //         try {
-    //             const resp = await fetch("https://jsonplaceholder.typicode.com/todos");
-    //             const respArr = await resp.json();
-    //             setTodoArrState(respArr.slice(0, 10))
-    //             isLoading(false)
-
-    //         } catch (e) {
-    //             console.log(e)
-    //             alert('Todos konnten nicht geladen werden')
-    //         }
-
-    //     }
-    //     fetchData()
-    // }, [])
+   
 
     // es wird erstmal das ausgeführt
     useEffect(() => {
@@ -138,20 +82,7 @@ const TodoContainer = () => {
                     deleteHandler={deleteTodo}
 
                 />} />
-                {/* TodoCount */}
-                <Route path="TodoCount" element={
-                <TodoCount
-                    todos={todoArrstate}
-                />} />
-                {/* PlayGround */}
-                {/* <Route path="Playground" element={
-                <Playground/>}
-                /> */}
-                <Route path="/Contact" element={<Contact/>}/>
-                    
                 <Route path="/About" element={<About />}/>
-                <Route path="/Privacy" element={<Privacy />}/>
-                
                 <Route path="*" element={<NoMatch/>}/>
 
             </Routes>

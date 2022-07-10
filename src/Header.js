@@ -1,33 +1,12 @@
 import React from "react";
 import {  NavLink } from "react-router-dom";
-// import { useState , useEffect} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faTabletButton} from '@fortawesome/free-solid-svg-icons'
 
 
 
 const Header = (props) => {
-    /* const [name, setName] = useState("");
-    const [lastName, setLastName] = useState("");
-
-
-    const handleChange = (event) => {
-        setName(event.target.value);
-    }
-
-
-    const handleChange2 = (event) => {
-        setLastName(event.target.value);
-    }
-
-    useEffect(() => {
-        const newArr2 = localStorage.getItem('Name')
-        setName(newArr2 === null ? [] : newArr2)
-    },[])
-
-    useEffect(() => {
-        localStorage.setItem('Name:', name);
-    }, [name]); */
+   
 
     return (
         <>
@@ -43,13 +22,7 @@ const Header = (props) => {
         
         
         </header>
-        {/* <div>
-            <p> <input onChange={handleChange}  /> Name :{name} </p> 
-            </div>
-            
-            <p>
-                <input onChange={handleChange2} />  LastName : {lastName}
-            </p> */}
+    
     </>
     )
 }

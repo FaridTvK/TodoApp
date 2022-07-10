@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
-// import TodoCount from "./TodoCount";
-// import styles from "./todoItemStyle.module.scss";
+
 import TodoItem from "./TodoItem";
 
 
