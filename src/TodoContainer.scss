@@ -1,0 +1,145 @@
+.App{
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(1, 70, 134);
+    gap: 5px;
+}
+
+.name {
+    margin: 0 auto;
+    color: white;
+}
+
+.about {
+    margin: 0 auto;
+}
+
+.about > *{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: white;
+}
+
+#getId {
+    color: white;
+    background-color: rgb(1, 70, 134);
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+
+.form{
+    display: flex;
+    height: 500px;
+    gap: 2rem;
+    flex-direction: column;
+
+}
+
+.form > * {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.inp-btn{
+    margin:0 auto;
+}
+
+.inp-btn > *{
+    margin: 20px;
+    background-color:rgb(176, 193, 210);
+}
+
+.todoBtn  * {
+    color: red;
+    height: 20px;
+    width: 60px;
+}
+
+
+#button-addon1{
+    background-color: white;
+}
+
+
+h2{
+    text-align: center;
+}
+
+p {
+    color: black
+}
+
+.firstClass {
+    color: red;
+    border : 1px red solid;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.firstClass > input {
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+ul {
+    background-color: gray;
+}
+
+li {
+    list-style-type:lower-alpha;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(251, 253, 255);
+}
+
+
+.sofort-btn{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    width: 200px;
+    border-radius: 50px;
+}
+.sofort-btn > button {
+    border: 2px solid rgb(255, 255, 255);
+    background-color:rgb(1, 70, 134);
+    border-radius: 50px;
+}
+
+
+.todo_list{
+    border:2px solid rgb(255, 254, 254);
+    border-radius: 20%;
+    padding: 25px;
+    margin: 0 auto;
+    box-shadow: 0 4px 50px 0 rgba(255, 255, 255, 0.2);
+    background-color:rgb(1, 70, 134);
+    width: 80vw;
+}
+
+.todo_list > li {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    list-style-type:none;
+    width: max-content;
+    background-color: rgb(1, 70, 134);
+    border-radius: 50px;
+}
+
+.nav > * {
+color: black;
+text-decoration: none;
+}
+
+.nav a.active {
+    color:darkblue;
+    font-size: 1.2rem;
+}
+

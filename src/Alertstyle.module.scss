@@ -1,0 +1,15 @@
+
+.sec{
+    margin: 0 auto;
+    width: max-content;
+    animation: blick 0.8s  infinite alternate;
+}
+
+@keyframes blick {
+    from {
+        color: rgb(1, 70, 134);
+    }
+    to{
+        color: rgb(70, 159, 241);
+    }
+}
